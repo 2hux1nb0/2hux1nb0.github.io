@@ -1,120 +1,54 @@
-# 1. Site Settings
-title               : Bo55Bo05B
-owner               : "PJ"
-## url                : "https://blacksuzaku.github.io"
-## baseurl            : "/blacksuzaku"
-permalink           : /:title/
-description         : "A hacker-style note-keeping website template."
-markdown            : kramdown
-statement           : "Designed by DeerRIDER, All Rights Reserved"
-bgtext              : "ABCFGHKLMNPQRSVWXYZabcdefghijklmnopqrstuvwxyz@#$%&*+-;/[]<>~" # texts randomly displayed in background
+title: dash
+author: GitHub User
+email: miguel-gonzalez@gmx.de
+description: > # this means to ignore newlines until "show_exerpts:"
+  Write an awesome description for your new site here. You can edit this
+  line in _config.yml. It will appear in your document head meta (for
+  Google search results) and in your feed.xml site description.
+show_excerpts: false # set to true to show excerpts on the homepage
 
-# 2. Your Collections
-# You can specify the order shown in Archive window. 
-# Keep it null if you want to show items in alphabetic order.
-collection_order    : 
-  [
-    "posts",
-    "math",
-    "album",
-    "physics",
-    "biology",
-    "finance",
-    "physics",
-    "my_notes",
-    "portfolio",
-  ]
-collections:
-  math:   
-    output          : true
-    permalink       : /:collection/:title/
-    sort_by         : date
-    alias           : "Mathematics"
-  portfolio:
-    output          : true
-    permalink       : /:collection/:title/
-    order: # specify post order manually
-      - portfolio3.md
-      - portfolio2.md
-      - portfolio1.md
-  album:
-    output          : true
-    permalink       : /:collection/:title/
-    sort_by         : date
-  physics:
-    output          : true
-    permalink       : /:collection/:title/
-  biology:
-    output          : true
-    permalink       : /:collection/:title/
-  finance:
-    output          : true
-    permalink       : /:collection/:title/
-  my_notes:
-    output          : true
-    permalink       : /:collection/:title/
-    # An alias should be given or the UNDERSCORE will appeared 
-    alias           : "My Notes"
-  posts:
-    output          : true
+paginate: 1
+paginate_path: "/blog/page:num/"
 
-# 3. Comment settings（disqus.com）
-disqus_username     : akiritsu
+tag_permalink_style: pretty
+tag_page_layout: tag_page
+tag_page_dir: tag
 
-# 4. Default page settings (WILL BE overwriten by front-matters of a page)
-defaults:
-  -    
-    scope:
-      path          : ""  # an empty string here means all files in the project
-    values:
-      layout              : "post"      # which layout to use by default
-      publish             : true        # whether to show by default      
-      btn_text            : true        # whether show button text by default
-      collection_list     : true        # whether show archive button by default
-      home_btn            : true        # whether show home by default
-      maximize            : true        # whether show maximize button by default
-      encrypted_text      : false       # whether use encrytion function by default
-      toc                 : true        # whether show table of content by default
-      toc_level           : 3           # the toc depth by default
-      author              : "DeerRIDER" # author name by default
-      show_date           : true        # whether show date message by default
-      category            :             # category by default
-      post_list           : false       # whether show list of post by default      
-      comment             : true
-      footer              : true        # whether show footer by default
+# jekyll-dash date format
+# refer to http://shopify.github.io/liquid/filters/date/ if you want to customize this
+dash:
+  date_format: "%b %-d, %Y"
 
-# 5. Social Media Accounts
-email               : "just-test" 
-linkedin            : 
-github              : "just-test" 
-gitlab              : 
-website             : 
-twitter             : "just-test"
-facebook            : "just-test"
-instagram           : 
-youtube             : "just-test"
-steam               : "just-test"
-weibo               :
-      
-# 6. Where things are
-source              : .
-destination         : ./_site
-collections_dir     : collections
-plugins_dir         : src/_plugins # takes an array of strings and loads plugins in that order
-layouts_dir         : src/_layouts
-data_dir            : src/_data
-includes_dir        : src/_includes
-sass:
-  sass_dir          : src/_sass
+  disqus:
+    shortname: bitbrain-github-io
 
-# 7. Plugins
+  # generate social links in footer
+  # supported colors: green, red, orange, blue, cyan, pink, teal, yellow, indigo, purple
+  social_links:
+    - url: https://twitter.com/bitbrain_
+      icon: twitter-square
+      color: cyan
+    - url: https://bitbrain.itch.io
+      icon: itch-io
+      color: red
+    - url: https://github.com/bitbrain
+      icon: github-square
+      color: purple
+
+  show_author: true
+
+  animation_speed: 50
+
+# Build settings
+theme: jekyll-dash
+
 plugins:
-  - jekyll-feed
-  - jekyll-sitemap
-  - jekyll-seo-tag
-  
-# 8. Others
-# Cross-Origin Resource Sharing header
-webrick:
-  headers:
-    Access-Control-Allow-Origin: "*"
+ - jekyll-feed
+ - jekyll-seo-tag
+ - jekyll-paginate
+ - liquid-md5
+ - jekyll/tagging
+
+# Replaces the default avatar provider (gravatar)
+#avatar_source: github
+#github_username: bitbrain

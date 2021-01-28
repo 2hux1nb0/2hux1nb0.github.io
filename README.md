@@ -1,240 +1,147 @@
+![logo](logo.png)
+--
 
-[![Forks][forks-shield]][forks-url]
-[![Stargazers][stars-shield]][stars-url]
-[![Issues][issues-shield]][issues-url]
-[![MIT License][license-shield]][license-url]
+A dark and light theme for Jekyll, inspired by Dash UI for Atom. 🌒☀
 
-<!-- LOGO -->
-<br />
-<p align="center">
-  <a href="https://github.com/akiritsu/pRoJEct-VeXEd">
-    <img src="src/assets/img/favicon.png" alt="Logo" width="80" height="80">
-  </a>
+[![Build Status](https://img.shields.io/travis/bitbrain/braingdx/master.svg?logo=travis&style=flat-square)](https://travis-ci.org/bitbrain/jekyll-dash)
+[![license](https://img.shields.io/github/license/bitbrain/jekyll-dash.svg?style=flat-square)](LICENSE.MD)
+[![Gem](https://img.shields.io/gem/v/jekyll-dash.svg?style=flat)](http://rubygems.org/gems/jekyll-dash "View this project in Rubygems")
+[![Downloads](https://ruby-gem-downloads-badge.herokuapp.com/jekyll-dash)](https://rubygems.org/gems/jekyll-dash "Number of Gem downloads")
+---
+This theme for [Jekyll](https://jekyllrb.com/) has been inspired by [dash-ui](https://atom.io/themes/dash-ui), a dark theme for [Atom](https://atom.io).
 
-  <h3 align="center">pRoJEct-VeXEd</h3>
-    <h5  align="center">v 2.3<h5
-    <br />
-  <p align="center">
-    pRoJEct-NeGYa is a hacker-like, highly-customizable theme for note-keeping, personal-website or CV.
-    <br />
-    <br />
-    <a href="https://akiritsu.github.io/pRoJEct-VeXEd/">View Demo</a>
-    ·
-    <a href="https://akiritsu.github.io/pRoJEct-VeXEd/issues">Report Bug</a>
-    ·
-    <a href="https://akiritsu.github.io/pRoJEct-VeXEd/issues">Request Feature</a>
-  </p>
-</p>
+[![design](theme.gif)](http://bitbrain.github.io)
 
-<!-- TABLE OF CONTENTS -->
-## Table of Contents
+## Installation
 
-- [Table of Contents](#table-of-contents)
-- [About The Project](#about-the-project)
-  - [Features](#features)
-  - [Builtwith](#builtwith)
-- [Getting Started](#getting-started)
-  - [Prerequisites](#prerequisites)
-  - [Installation](#installation)
-  - [Personalize and Customize](#personalize-and-customize)
-    - [_config.yml](#_configyml)
-    - [Collections](#collections)
-    - [Writing](#writing)
-    - [Comment](#comment)
-    - [Test locally](#test-locally)
-    - [Front Matter](#front-matter)
-- [Roadmap](#roadmap)
-- [Contributing](#contributing)
-- [License](#license)
-- [Contact](#contact)
+Add this line to your Jekyll site's `Gemfile`:
 
-
-<!-- ABOUT THE PROJECT -->
-## About The Project
-
-![homepage](src/assets/img/Screenshot-2.png)
-
-This jekyll theme is a content-oriented blog, cv or learning notes, aimed at providing a convinient note-keeping tool. You can keep and review your notes or articles in different collections without any functional recode.
-
-### Features
-
-* Highly customizable
-* Formula insertion
-* Code test online
-* Easy-to-use cheatsheet
-* Hacker-like theme
-* Code highlight
-* Text Decryption
-* Convinient code exhibition and review
-* Table of content
-* Atom Feeds
-* SEO
-
-### Builtwith
-
-* Bundler
-* Jekyll
-* Mathpix
-* Font Awesome
-* Sjcl
-* Disqus
-
-## Getting Started
-
-### Prerequisites
-* rubygems
-
-The installation of gem is depend on your operating system. Alternatively, you can download Gem through browser: [Ruby](https://www.ruby-lang.org/en/downloads/), and install rubygems manually.
-
-```bash
-# macOS
-
-brew update
-brew install ruby
-
-# Ubuntu
-sudo apt-get install ruby
-
-# Arch
-sudo pacman -S ruby
-
+For **Jekyll 3**:
+```ruby
+gem 'jekyll-dash', '~> 1.0.0'
 ```
 
-* bundler
+> Keep in mind: Github pages generation only supports Jekyll 3.8 right now.
 
-```bash
-gem install bundler
-```
-* jekyll
-```bash
-bundler install jekyll
+For **Jekyll 4**:
+```ruby
+gem 'jekyll-dash', '~> 2.0.0'
 ```
 
-### Installation
-
-1. Fork this project on [github](https://github.com/akiritsu/pRoJEct-VeXEd), change project settings, and clone your own repository into your local disk.
-
-```bash
-git clone https://github.com/{{YOUR_USERNAME}}/{{YOUR_REPOSITORY}}.git
-```
-
-2. Change directory.
-
-```bash
-cd {{YOUR_REPOSITORY_DIR}}
-```
-
-### Personalize and Customize
-
-#### _config.yml
-
-Edit **_config.yml** with your own website information.
-
-#### Collections
-
-All your articles could be stored in this folder. You could create a new collection by creating a subfolder begin with a slash, and register the basic information in **_config.yml**. Here is an example:
+And add this line to your Jekyll site's `_config.yml`:
 
 ```yaml
-# Collections
-collections:
-  notes:
-    output          : true
-    permalink       : /:collection/:title/
-    sort_by         : date
-  portfolio:
-    output          : true
-    permalink       : /:collection/:title/
-    order: # specify post order manually
-      - portfolio3.md
-      - portfolio2.md
-      - portfolio1.md
-  album:
-    output          : true
-    permalink       : /:collection/:title/
-    sort_by         : date
+theme: jekyll-dash
 ```
 
-All your articles would be shown by clicking **Archive** button in the header of your website.
+And then execute:
 
-#### Writing
+    $ bundle
 
-Delete all sample collections under **./collections/**, and have fun in writing!
+Or install it yourself as:
 
-#### Comment
+    $ gem install jekyll-dash -v version
 
-Create your own account in [Disqus.com](https://disqus.com/), and change the attribute "disqus_username" in **_config.yml**.
+## Configuration
 
-#### Test locally
-
-Run command below, and access "127.0.0.1:4000" to test your website locally.
-
-```bash
-bundle exec jekyll serve
-```
-
-#### Front Matter
-
-You can add many front matter to customize a page. For more information, visit official document: [https://jekyllrb.com/] (https://jekyllrb.com/docs/front-matter/)
+Add the following configuration to your site. Customise it to your needs!
 
 ```yaml
-layout: post # page layout, must be one of layouts under src/_layouts
-title: "Sample" # string
-author: "your_name" # string
-post_list: "cate" # whether to show post list under collections/_post, one of false, "cate", "date"
-collection_list: true # true or false
-toc: true # table of content, true or false
-show_date: true # whether to show date, true or false
-home_btn: true # whether to show home button, true or false
-btn_text: true # whether to show button text, true or false
-footer: true # whether to show footer, true or false
-maximize: true # whether to show maximize button, true or false
-encrypted_text: true # whether to enable encrypted text, true or false
-publish: true # if you wish keep this page invisible, put false here
-toc_level: 4 # the depth of toc, one of 1, 2, 3, 4, 5, 6
-comment: ture # whether to show comment area
-category: "sample" # string
-date: 2019-5-25 # YYYY-MM-DD
-excerpt: "This is excerpt." # string
-abstract: "This is abstract. Abstract is blank by default." # string
+# required by disqus to display comments
+url: https://your-site-url
+
+# jekyll-paginate
+paginate: 5
+paginate_path: "/blog/page:num/"
+
+# jekyll-tagging (optional)
+tag_permalink_style: pretty
+tag_page_layout: tag_page
+tag_page_dir: tag
+
+dash:
+  date_format: "%b %-d, %Y"
+
+  disqus:
+    shortname: <your-disqus-shortname>
+
+  # generate social links in footer
+  # supported colors: green, red, orange, blue, cyan, pink, teal, yellow, indigo, purple
+  social_links:
+    - url: https://twitter.com/bitbrain_
+      icon: twitter-square
+      color: cyan
+    - url: https://bitbrain.itch.io
+      icon: itch-io
+      color: red
+    - url: https://github.com/bitbrain
+      icon: github-square
+      color: purple
+      
+  show_author: true
+
+# Replaces the default avatar provider (gravatar)
+#avatar_source: github
+#github_username: bitbrain
 ```
+## Using this theme directly on Github Pages
 
-## Roadmap
+Please keep in mind that Github Pages does only support [a limited list of Jekyll plugins](https://pages.github.com/versions/). You will be able to use this theme on Github Pages but some functionality might not be available, for example displaying tags. In order to use this theme to a full extend, you have to generate the `_site` externally, for example on [TravisCI](https://travis-ci.org). 
 
-1. On-browser code execution teminal.
-2. Code review mode.
-3. Slide mode.
-4. Rapid cheatsheet access.
+For example, you want to host your own blog on `https://<username>.github.io`. As a result, you require the following repositories:
 
+* `blog` - contains the actual Jekyll sources ([see example](https://github.com/bitbrain/blog))
+* `<username>.github.io` - contains generated webpage, pushed automatically via TravisCI ([see example](https://github.com/bitbrain/bitbrain.github.io))
 
-<!-- CONTRIBUTING -->
+You are not required to do this, but keep in mind that some functionality might not be available when using the Jekyll generator on Github directly!
+
+## Additional Features
+
+**Tagging** add the `jekyll/tagging` plugin to your `_config.yml` file to enable tagging. Do not forget to also add the following to your `Gemfile`:
+```Gemfile
+gem "jekyll-tagging"
+```
+**Gravatar** if you want to display your gravatar picture, add the `liquid-md5` to your `_config.yml` file. Do not forget to also add the following to your `Gemfile`:
+```Gemfile
+gem "liquid-md5"
+```
+## FAQ
+
+> I have configured posts but no posts are showing?
+
+**Solution:** You most probably forgot to configure [jekyll-paginate](https://jekyllrb.com/docs/pagination/) in your _config.yml! Make sure you have the correct configuration as described above!
+
+> I have added the correct configuration for `jekyll-paginate` but it is now complaining about a missing `index.html` file. What do I do?
+
+**Solution** pagination only works with HTML files! Markdown is not supported there. Simply rename your `index.md` into `index.html` - that should do the trick!
+
+> I have configured Disqus via _config.yml but Disqus fails to load on the page? 
+
+**Solution:** Make sure you configure the correct `url` within your `_config.yml`. Also make sure that your domain is trusted by Disqus. This can be configured within Disqus by adding a trusted domain.
+
+> I am using this theme but I don't see any tags?
+
+**Solution**: as described above you have to add the tagging plugin. Additionally, tags do not work natively by Github Pages. You have to build your site on an external CI and push the `_site` artifacts to a hosting repository.
+
+> I am getting an error that Bundler could not find compatible versions for gem
+
+**Solution**
+
+Make sure you are using a version of this theme that is compatible with Jekyll. Version 1.x is only compatible with Jekyll 3.x while Version 2.x is only compatible with Jekyll 4.x.
+
 ## Contributing
 
-Contributions are what make the open source community such an amazing place to be learn, inspire, and create. Any contributions you make are **greatly appreciated**.
+Bug reports and pull requests are welcome on GitHub at https://github.com/bitbrain/jekyll-dash. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
 
-1. Fork the Project
-2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the Branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
+## Development
 
-<!-- LICENSE -->
+To set up your environment to develop this theme, run `bundle install`.
+
+Your theme is setup just like a normal Jekyll site! To test your theme, run `bundle exec jekyll serve` and open your browser at `http://localhost:4000`. This starts a Jekyll server using your theme. Add pages, documents, data, etc. like normal to test your theme's contents. As you make modifications to your theme and to your content, your site will regenerate and you should see the changes in the browser after a refresh, just like normal.
+
+When your theme is released, only the files in `_layouts`, `_includes`, `_sass` and `assets` tracked with Git will be bundled.
+To add a custom directory to your theme-gem, please edit the regexp in `jekyll-dash.gemspec` accordingly.
+
 ## License
 
-Distributed under the MIT License. See `LICENSE` for more information.
-
-
-<!-- CONTACT -->
-## Contact
-
-DeerRIDER - [Email](mailto://deerrider666@outlook.com)
-
-Project Link: [https://github.com/akiritsu/pRoJEct-VeXEd](https://github.com/akiritsu/pRoJEct-VeXEd)
-
-[forks-shield]: https://img.shields.io/github/forks/akiritsu/pRoJEct-VeXEd.svg?style=flat-square
-[forks-url]: https://github.com/akiritsu/pRoJEct-VeXEd/network/members
-[stars-shield]: https://img.shields.io/github/stars/akiritsu/pRoJEct-VeXEd.svg?style=flat-square
-[stars-url]: https://https://github.com/akiritsu/pRoJEct-VeXEd/stargazers
-[issues-shield]: https://img.shields.io/github/issues/akiritsu/pRoJEct-VeXEd.svg?style=flat-square
-[issues-url]: https://https://github.com/akiritsu/pRoJEct-VeXEd/issues
-[license-shield]: https://img.shields.io/github/license/akiritsu/pRoJEct-VeXEd.svg?style=flat-square
-[license-url]: https://https://github.com/akiritsu/pRoJEct-VeXEd/blob/master/LICENSE.txt
+The theme is available as open source under the terms of the [Apache License 2.0](https://opensource.org/licenses/Apache-2.0).
