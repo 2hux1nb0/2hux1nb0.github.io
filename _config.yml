@@ -13,15 +13,15 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: Bo55Bo05B Blog
+title: == P·J'Blog ==
 email: 1321376990@qq.com
 name: Piter Ju
 description: >- # this means to ignore newlines until "baseurl:"
-  Focus on Websecurity KillBug SoftwareTechSharing
-keywords: [WebSecurity/BugKiller/SoftwareTech]
+  Focus on SoftwareTechSharing ImplEngineering WebSecurity KillBug.
+keywords: [websecurity/bugkiller/softwaretech/engineimpl]
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
-domain: "BLACKSUZAKU" # the domain name for your site, e.g. example.com
+domain: "BlackSuzaku" # the domain name for your site, e.g. example.com
 language: en
 # Supported languages list:
 # en: English
