@@ -17,11 +17,11 @@ title: Bo55Bo05B Blog
 email: 1321376990@qq.com
 name: Piter Ju
 description: >- # this means to ignore newlines until "baseurl:"
-  专注于网络安全、实施工程、Bug解决、软件技术分享、前沿技术学习等领域
+  Focus on Websecurity KillBug SoftwareTechSharing
 keywords: [WebSecurity/BugKiller/SoftwareTech]
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
-domain: "https://github.com/BLACKSUZAKU" # the domain name for your site, e.g. example.com
+domain: "" # the domain name for your site, e.g. example.com
 language: zh-cn
 # Supported languages list:
 # en: English
