@@ -21,7 +21,7 @@ description: >- # this means to ignore newlines until "baseurl:"
 keywords: [WebSecurity/BugKiller/SoftwareTech]
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
-domain: "" # the domain name for your site, e.g. example.com
+domain: "BLACKSUZAKU" # the domain name for your site, e.g. example.com
 language: en
 # Supported languages list:
 # en: English

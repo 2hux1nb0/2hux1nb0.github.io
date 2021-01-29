@@ -4,9 +4,9 @@
 - default: menu_category
   url:   "category"
 
-- title: "BugKiller"
+- title: "MyGithub"
   absoluteUrl: true
-  url: "https://github.com/ghosind/Jekyll-Paper"
+  url: "https://github.com/BLACKSUZAKU"
 
 - default: menu_about
   url:   "about"
