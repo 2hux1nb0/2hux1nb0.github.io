@@ -1,4 +1,4 @@
-const loadMermaid = () => {
+function loadMermaid() {
   mermaid.init(
     {
       startOnLoad: true,

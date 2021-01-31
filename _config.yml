@@ -1,27 +1,16 @@
-# Welcome to Jekyll-Paper!
+# Welcome to Jekyll Paper for Github
 #
-# This config file is meant for settings that affect your whole blog, values
-# which you are expected to set up once and rarely edit after that. If you find
-# yourself editing this file very often, consider using Jekyll's data files
-# feature for the data you need to update frequently.
-#
-# For technical reasons, this file is *NOT* reloaded automatically when you use
-# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
+# This is the configuration file for your blog, please change these items after forked.
 
-# Site settings
-# These are used to personalize your new site. If you look in the HTML files,
-# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
-# You can create any custom variable you would like, and they will be accessible
-# in the templates via {{ site.myvariable }}.
-title: P·J'Blog
-email: 1321376990@qq.com
-name: Piter Ju
+title: Your title
+email: your-email@example.com
+name: Your name
 description: >- # this means to ignore newlines until "baseurl:"
-  Focus on SoftwareTechSharing ImplEngineering WebSecurity BugKilling.
-keywords: [websecurity/bugkiller/softwaretech/engineimpl]
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
-domain: "BlackSuzaku" # the domain name for your site, e.g. example.com
+  Write an awesome description for your new site here.
+keywords: [Your keywords]
+baseurl: '' # the subpath of your site, e.g. /`blog
+url: '' # the base hostname & protocol for your site, e.g. http://example.com
+domain: 'example.com' # the domain name for your site, e.g. example.com
 language: en
 # Supported languages list:
 # en: English
@@ -33,16 +22,16 @@ language: en
 # zh-cn: 简体中文 (Simplified Chinese)
 # zh-tw: 繁體中文 (Traditional Chinese)
 
-analytics:   # the Google Analytics property ID, e.g. UA-XXXXX-Y
+analytics: # the Google Analytics property ID, e.g. UA-XXXXX-Y
+
+comments: false # enable comments
+disqus: # disqus account
+
+mathjax: true # Math support
+diagram: true # Diagrams support
 
 paginate: 25
-paginate_path: "/page:num/"
-
-comments: false  # enable comments
-disqus:          # disqus account
-
-mathjax: true # Mathematics
-mermaid: true # Diagrams
+paginate_path: '/page:num/'
 
 permalink: /:year/:month/:day/:title
 
@@ -50,25 +39,13 @@ sass:
   sass_dir: _sass
   style: expanded # compressed, compact, expanded or compressed
 
-# Category settings
-jekyll-archives:
-  enabled: 
-    - categories
-    - tags
-  layout: archive
-  permalinks:
-    category: /category/:name/
-    tag: /tag/:name/
-
 # Build settings
 markdown: kramdown
 plugins:
   - jekyll-feed
   - jekyll-paginate
   - jekyll-sitemap
-  - jekyll-archives
   - jekyll-seo-tag
-
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
 # to override the default setting.
