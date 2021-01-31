@@ -10,7 +10,7 @@ permalink: /about/
                             |           热爱网络安全领域兴趣         
                             |      联系我的方式：1321376990@qq.com  
                             +======================================+
-                                  我为长者续一秒   长者佑我烦恼少
+                                   我为长者续一秒   长者佑我烦恼少
                             uJjYJYYLLv7r7vJJ5kqSFFFUUjJ7rrr7LLYLJLJ7
                             JuJujuYLrvuEM@@@B@@@B@B@B@@@MG5Y7vLjYjJL
                             JYjYJvr7XM@BB8GOOE8ZEEO8GqM8OBBBMu77LLJ7
