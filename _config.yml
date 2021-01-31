@@ -6,7 +6,7 @@ title: PJ'Blog
 email: 1321376990@qq.com
 name: Piter Ju
 description: >- # this means to ignore newlines until "baseurl:"
-  Focus on softwaretechsharing implengineering bugkiller websecurity.
+  Focus on softwareTechSharing implEngineering bugKiller webSecurity.
 keywords: [websecurity/bugkiller/softwaretech/engineimpl]
 baseurl: '' # the subpath of your site, e.g. /`blog
 url: '' # the base hostname & protocol for your site, e.g. http://example.com
