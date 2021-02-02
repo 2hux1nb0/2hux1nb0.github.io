@@ -16,7 +16,7 @@ Let's Encrypt免费SSL证书的出现，也会对传统提供付费SSL证书服�
 
 ### 0x01 第一、安装Let's Encrypt前的准备工作  
 
-```c#
+```java
 检查系统是否安装git,如果已经自带有git会出现git版本号，没有则需要我们自己安装  
 git  --version   
 git 安装  
@@ -50,7 +50,7 @@ vi /usr/bin/yum
 
 ### 0x02 第二、获取Let's Encrypt免费SSL证书  
 
- ```c
+ ```python
 获取letsencrypt  
 git clone https://github.com/letsencrypt/letsencrypt  
 进入letsencrypt目录  
@@ -79,7 +79,7 @@ cd letsencrypt
 
 打开linux配置文件，找到`HTTPS 443`端口配置的`server`  
 
-```c++
+```java
  ssl_certificate /etc/letsencrypt/live/xxx.me/fullchain.pem;  
  ssl_certificate_key /etc/letsencrypt/live/xxx.me/privkey.pem;  
 ```
@@ -106,7 +106,7 @@ Let's Encrypt证书是有效期90天的，需要我们自己手工更新续期�
 
 修改`extra/httpd-ssl.conf`  
 
-```php
+```go
 <VirtualHost _default_:443>
 这段开始，就是虚拟主机ssl的配置  
 
