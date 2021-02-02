@@ -64,23 +64,31 @@ cd letsencrypt
 
 
 ### 0x03 第三、Let's Encrypt免费SSL证书获取与应用  
- ```
+ 
 在完成Let's Encrypt证书的生成之后，我们会在"`/etc/letsencrypt/live/xxx.me/`"域名目录下有4个文件就是生成的密钥证书文件。  
+
 `cert.pem  - Apache服务器端证书`  
+
 `chain.pem  - Apache根证书和中继证书`  
+
 `fullchain.pem  - Nginx所需要ssl_certificate文件`  
+
 `privkey.pem - 安全证书KEY文件`  
+
 如果我们使用的Nginx环境，那就需要用到`fullchain.pem`和`privkey.pem`两个证书文件，在部署Nginx的时候需要用到。  
+
 在Nginx环境中，只要将对应的`ssl_certificate和ssl_certificate_key`路径设置成我们生成的2个文件就可以。  
 
-打开linux配置文件，找到`HTTPS 443`端口配置的`server`  
 
+打开linux配置文件，找到`HTTPS 443`端口配置的`server`  
+```
  ssl_certificate /etc/letsencrypt/live/zhaoheqiang.me/fullchain.pem;  
  ssl_certificate_key /etc/letsencrypt/live/zhaoheqiang.me/privkey.pem;  
-```  
+```
+
+### 0x04 第四、解决Let's Encrypt免费SSL证书有效期问题  
 
 
-### 0x04 第四、解决Let's Encrypt免费SSL证书有效期问题
 Let's Encrypt证书是有效期90天的，需要我们自己手工更新续期才可以。  
 
 命令如下：  
@@ -92,20 +100,23 @@ Let's Encrypt证书是有效期90天的，需要我们自己手工更新续期�
 2.修改配置文件
 `httpd.conf ` 
 找到 `LoadModule socache_shmcb_module modules/mod_socache_shmcb.so`，把前面的注释去掉  
+
 找到 `LoadModule ssl_module modules/mod_ssl.so` ，把前面的注释去掉  
+
 找到 `LoadModule rewrite_module modules/mod_rewrite.so`，把前面的注释去掉  
+
 
 找到 `Include conf/extra/httpd-ssl.conf`，把前面的注释去掉  
 
 修改`extra/httpd-ssl.conf`  
-
+```php
 <VirtualHost _default_:443>
 这段开始，就是虚拟主机ssl的配置  
 
 SSLCertificateFile "/usr/local/apache/conf/server.crt"  
 SSLCertificateKeyFile "/usr/local/apache/conf/server.key"  
 这是https相关证书的配置路径
-
+```
 在最后添加
 ```
 RewriteEngine on
