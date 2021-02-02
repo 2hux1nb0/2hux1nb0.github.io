@@ -16,7 +16,7 @@ Let's Encrypt免费SSL证书的出现，也会对传统提供付费SSL证书服�
 
 ### 0x01 第一、安装Let's Encrypt前的准备工作  
 
-```
+```c#
 检查系统是否安装git,如果已经自带有git会出现git版本号，没有则需要我们自己安装  
 git  --version   
 git 安装  
@@ -48,10 +48,9 @@ vi /usr/bin/yum
 !/usr/bin/python2.6.6
 ```  
 
-
 ### 0x02 第二、获取Let's Encrypt免费SSL证书  
 
- ```
+ ```c
 获取letsencrypt  
 git clone https://github.com/letsencrypt/letsencrypt  
 进入letsencrypt目录  
@@ -62,9 +61,8 @@ cd letsencrypt
 0 0 1 */2 * /data/ma/certbot-master/letsencrypt-auto certonly --standalone --email xxx@xxx.com -d www.nudt.edu.cn -d english.nudt.edu.cn
 ```  
 
-
 ### 0x03 第三、Let's Encrypt免费SSL证书获取与应用  
- 
+
 在完成Let's Encrypt证书的生成之后，我们会在"`/etc/letsencrypt/live/xxx.me/`"域名目录下有4个文件就是生成的密钥证书文件。  
 
 `cert.pem  - Apache服务器端证书`  
@@ -79,15 +77,14 @@ cd letsencrypt
 
 在Nginx环境中，只要将对应的`ssl_certificate和ssl_certificate_key`路径设置成我们生成的2个文件就可以。  
 
-
 打开linux配置文件，找到`HTTPS 443`端口配置的`server`  
-```
- ssl_certificate /etc/letsencrypt/live/zhaoheqiang.me/fullchain.pem;  
- ssl_certificate_key /etc/letsencrypt/live/zhaoheqiang.me/privkey.pem;  
+
+```c++
+ ssl_certificate /etc/letsencrypt/live/xxx.me/fullchain.pem;  
+ ssl_certificate_key /etc/letsencrypt/live/xxx.me/privkey.pem;  
 ```
 
 ### 0x04 第四、解决Let's Encrypt免费SSL证书有效期问题  
-
 
 Let's Encrypt证书是有效期90天的，需要我们自己手工更新续期才可以。  
 
@@ -98,17 +95,17 @@ Let's Encrypt证书是有效期90天的，需要我们自己手工更新续期�
 这样我们在90天内再去执行一次就可以解决续期问题，这样又可以继续使用90天。如果我们怕忘记的话也可以利用linux  crontab定时执行更新任务
 
 2.修改配置文件
-`httpd.conf ` 
+`httpd.conf`
 找到 `LoadModule socache_shmcb_module modules/mod_socache_shmcb.so`，把前面的注释去掉  
 
 找到 `LoadModule ssl_module modules/mod_ssl.so` ，把前面的注释去掉  
 
 找到 `LoadModule rewrite_module modules/mod_rewrite.so`，把前面的注释去掉  
 
-
 找到 `Include conf/extra/httpd-ssl.conf`，把前面的注释去掉  
 
 修改`extra/httpd-ssl.conf`  
+
 ```php
 <VirtualHost _default_:443>
 这段开始，就是虚拟主机ssl的配置  
@@ -117,10 +114,13 @@ SSLCertificateFile "/usr/local/apache/conf/server.crt"
 SSLCertificateKeyFile "/usr/local/apache/conf/server.key"  
 这是https相关证书的配置路径
 ```
+
 在最后添加
-```
+
+```java
 RewriteEngine on
 RewriteCond %{SERVER_PORT} !^443$
 RewriteRule ^/?(.*)$ https://%{SERVER_NAME}/$1 [L,R]
 ```
+
 当输入http时，自动跳到https
