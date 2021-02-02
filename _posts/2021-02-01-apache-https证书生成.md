@@ -14,7 +14,7 @@ Let's Encrypt免费SSL证书的出现，也会对传统提供付费SSL证书服�
 
 步骤如下：  
 
- ### 0x01 第一、安装Let's Encrypt前的准备工作  
+### 0x01 第一、安装Let's Encrypt前的准备工作  
 
 ```
 检查系统是否安装git,如果已经自带有git会出现git版本号，没有则需要我们自己安装  
@@ -49,7 +49,7 @@ vi /usr/bin/yum
 ```  
 
 
- ### 0x02 第二、获取Let's Encrypt免费SSL证书  
+### 0x02 第二、获取Let's Encrypt免费SSL证书  
 
  ```
 获取letsencrypt  
@@ -63,7 +63,7 @@ cd letsencrypt
 ```  
 
 
- ### 0x03 第三、Let's Encrypt免费SSL证书获取与应用  
+### 0x03 第三、Let's Encrypt免费SSL证书获取与应用  
  ```
 在完成Let's Encrypt证书的生成之后，我们会在"`/etc/letsencrypt/live/xxx.me/`"域名目录下有4个文件就是生成的密钥证书文件。  
 `cert.pem  - Apache服务器端证书`  
@@ -80,7 +80,7 @@ cd letsencrypt
 ```  
 
 
- ### 0x04 第四、解决Let's Encrypt免费SSL证书有效期问题
+### 0x04 第四、解决Let's Encrypt免费SSL证书有效期问题
 Let's Encrypt证书是有效期90天的，需要我们自己手工更新续期才可以。  
 
 命令如下：  
