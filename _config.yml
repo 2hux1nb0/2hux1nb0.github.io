@@ -9,7 +9,7 @@ description: >- # this means to ignore newlines until "baseurl:"
   Focus on softwareTechSharing implEngineering bugKiller webSecurity.
 keywords: [websecurity/bugkiller/softwaretech/engineimpl]
 baseurl: '' # the subpath of your site, e.g. /`blog
-url: '' # the base hostname & protocol for your site, e.g. http://example.com
+url: '' # the base hostname & protocol for your site, e.g. <http://example.com
 domain: 'BLACKSUZAKU' # the domain name for your site, e.g. example.com
 language: en
 # Supported languages list:

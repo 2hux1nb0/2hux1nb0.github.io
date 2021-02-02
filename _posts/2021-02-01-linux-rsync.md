@@ -8,7 +8,7 @@ categories: [Linux]
 **需求：**用rsync完成异地文件的同步   
 **难点：**如何建立异地信任关系 
 
-1、在A主机上（rsync服务器）上编译安装rsync，需要版本在2.4.3以上（http://rsync.samba.org）,在/etc目录下建立rsyncd.conf文件，内容如下：  
+1、在A主机上（rsync服务器）上编译安装rsync，需要版本在2.4.3以上（<http://rsync.samba.org）,在/etc目录下建立rsyncd.conf文件，内容如下：  
 ```
 uid = nobody  
 gid = nobody  
