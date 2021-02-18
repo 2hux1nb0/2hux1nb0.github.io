@@ -15,9 +15,13 @@ stegsolve安装配置：配置好Java环境变量（就是需要安装Java，然
 
 ![](https://img2018.cnblogs.com/blog/1755571/201909/1755571-20190907205101838-647785284.png)  
 
+![img](https://img2018.cnblogs.com/blog/1755571/201909/1755571-20190907205101838-647785284.png)
+
 文件打开保存退出，没什么好说的  
 
 ![Alternate text](https://img2018.cnblogs.com/blog/1755571/201909/1755571-20190907205142373-678679799.png)  
+
+![Alternate text](https://img2018.cnblogs.com/blog/1755571/201909/1755571-20190907205142373-678679799.png)
 
 在分析里面从上到下的依次意思是
 
@@ -40,6 +44,8 @@ Image Combiner:拼图，图片拼接
 2.Data Extract:(好多涉及到数据提取的时候，很多博主在wp中都是一带而过，小白们还以为要一个个试。。)  
 
 ![Alternate text](https://img2018.cnblogs.com/blog/1755571/201909/1755571-20190907205846350-1245388993.png)  
+
+![Alternate text](https://img2018.cnblogs.com/blog/1755571/201909/1755571-20190907205846350-1245388993.png)
 
 左边一大部分主要是讲了RGBA（Alpha是透明度）的颜色通道
 
