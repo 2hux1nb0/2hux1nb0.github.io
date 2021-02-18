@@ -13,7 +13,7 @@ stegsolve安装配置：配置好Java环境变量（就是需要安装Java，然
 
 配置好环境之后直接打开就可以使用  
 
-![Alternate text](https://img2018.cnblogs.com/blog/1755571/201909/1755571-20190907205101838-647785284.png)
+![Alternate text](https://img2018.cnblogs.com/blog/1755571/201909/1755571-20190907205101838-647785284.png)  
 
 文件打开保存退出，没什么好说的  
 
