@@ -3,6 +3,7 @@ layout: post
 title:  "ctf-隐写图片解析器-stegsolve的使用"
 categories: [ctf]
 tags: [stegsolve]
+
 ---
 
 CTF隐写术————隐写图片解析神器----**stegsolve**  
@@ -17,7 +18,7 @@ stegsolve安装配置：配置好Java环境变量（就是需要安装Java，然
 
 文件打开保存退出，没什么好说的  
 
-![](C:\Users\MACHENIKE\Desktop\2.png)
+![在这里插入图片描述](https://img-blog.csdnimg.cn/20210219092646272.png#pic_center)
 
 在分析里面从上到下的依次意思是
 
@@ -39,8 +40,7 @@ Image Combiner:拼图，图片拼接
 
 2.Data Extract:(好多涉及到数据提取的时候，很多博主在wp中都是一带而过，小白们还以为要一个个试。。)  
 
-![Alternate text](C:\Users\MACHENIKE\Desktop\3.png)  
-
+![在这里插入图片描述](https://img-blog.csdnimg.cn/20210219092717929.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80MzYzOTY4Mg==,size_16,color_FFFFFF,t_70#pic_center)
 
 
 左边一大部分主要是讲了RGBA（Alpha是透明度）的颜色通道
@@ -87,22 +87,26 @@ alpha的值为0就是全透明，alpha 的值为 255 则表示不透明
 
 接下来会带大家实战去深入理解一下Data Extract里面ctf经常用到的LSB隐写  
 
-![](C:\Users\MACHENIKE\Desktop\4.png)
+![在这里插入图片描述](https://img-blog.csdnimg.cn/2021021909273636.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80MzYzOTY4Mg==,size_16,color_FFFFFF,t_70#pic_center)
+
 
 这个我们之前介绍的很详细
 
 而LSB隐写就是修改RGB颜色分量的最低二进制位也就是最低有效位（LSB），而人类的眼睛不会注意到这前后的变化，（人类的眼睛只能识别一部分颜色的变化）  
 
-![](C:\Users\MACHENIKE\Desktop\5.png)
+![在这里插入图片描述](https://img-blog.csdnimg.cn/20210219092746432.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80MzYzOTY4Mg==,size_16,color_FFFFFF,t_70#pic_center)
+
 
 如果我们修改lsb那么颜色依然和没修改的一样，并且修改的话每个像数可以携带3比特的信息。  
 
-![Alternate text](C:\Users\MACHENIKE\Desktop\6.png)  
+![在这里插入图片描述](https://img-blog.csdnimg.cn/2021021909275827.png#pic_center)
+
 
 这个作用是在于把最低位的二进制全部提取出来  
 
-![Alternate text](C:\Users\MACHENIKE\Desktop\7.png)  
+![在这里插入图片描述](https://img-blog.csdnimg.cn/20210219092807867.png#pic_center)
+
 
 这个作用在于对提取出来的最低位使用lsb解码算法  
 
-![Alternate text](C:\Users\MACHENIKE\Desktop\8.png)
+![在这里插入图片描述](https://img-blog.csdnimg.cn/20210219092817531.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80MzYzOTY4Mg==,size_16,color_FFFFFF,t_70#pic_center)
