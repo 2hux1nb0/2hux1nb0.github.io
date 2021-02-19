@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Windows查看当前电脑连接过的所有WiFi密码"
-categories: [网络安全]
+categories: [网络安全CyberSecurity]
 tags: [WiFi]
 ---
 
