@@ -13,15 +13,11 @@ stegsolve安装配置：配置好Java环境变量（就是需要安装Java，然
 
 配置好环境之后直接打开就可以使用  
 
-![](https://img2018.cnblogs.com/blog/1755571/201909/1755571-20190907205101838-647785284.png)  
 
-![img](https://img2018.cnblogs.com/blog/1755571/201909/1755571-20190907205101838-647785284.png)
 
 文件打开保存退出，没什么好说的  
 
-![Alternate text](https://img2018.cnblogs.com/blog/1755571/201909/1755571-20190907205142373-678679799.png)  
-
-![Alternate text](https://img2018.cnblogs.com/blog/1755571/201909/1755571-20190907205142373-678679799.png)
+![](C:\Users\MACHENIKE\Desktop\2.png)
 
 在分析里面从上到下的依次意思是
 
@@ -43,9 +39,9 @@ Image Combiner:拼图，图片拼接
 
 2.Data Extract:(好多涉及到数据提取的时候，很多博主在wp中都是一带而过，小白们还以为要一个个试。。)  
 
-![Alternate text](https://img2018.cnblogs.com/blog/1755571/201909/1755571-20190907205846350-1245388993.png)  
+![Alternate text](C:\Users\MACHENIKE\Desktop\3.png)  
 
-![Alternate text](https://img2018.cnblogs.com/blog/1755571/201909/1755571-20190907205846350-1245388993.png)
+
 
 左边一大部分主要是讲了RGBA（Alpha是透明度）的颜色通道
 
@@ -91,22 +87,22 @@ alpha的值为0就是全透明，alpha 的值为 255 则表示不透明
 
 接下来会带大家实战去深入理解一下Data Extract里面ctf经常用到的LSB隐写  
 
-![Alternate text](https://img2018.cnblogs.com/blog/1755571/201909/1755571-20190913160726122-392466660.png)  
+![](C:\Users\MACHENIKE\Desktop\4.png)
 
 这个我们之前介绍的很详细
 
 而LSB隐写就是修改RGB颜色分量的最低二进制位也就是最低有效位（LSB），而人类的眼睛不会注意到这前后的变化，（人类的眼睛只能识别一部分颜色的变化）  
 
-![Alternate text](https://img2018.cnblogs.com/blog/1755571/201909/1755571-20190913161002893-848621076.png)  
+![](C:\Users\MACHENIKE\Desktop\5.png)
 
 如果我们修改lsb那么颜色依然和没修改的一样，并且修改的话每个像数可以携带3比特的信息。  
 
-![Alternate text](https://img2018.cnblogs.com/blog/1755571/201909/1755571-20190913161618442-1836080485.png)  
+![Alternate text](C:\Users\MACHENIKE\Desktop\6.png)  
 
 这个作用是在于把最低位的二进制全部提取出来  
 
-![Alternate text](https://img2018.cnblogs.com/blog/1755571/201909/1755571-20190913161708204-989077006.png)  
+![Alternate text](C:\Users\MACHENIKE\Desktop\7.png)  
 
 这个作用在于对提取出来的最低位使用lsb解码算法  
 
-![Alternate text](https://img2018.cnblogs.com/blog/1755571/201909/1755571-20190913162924026-2095648234.png)
+![Alternate text](C:\Users\MACHENIKE\Desktop\8.png)
