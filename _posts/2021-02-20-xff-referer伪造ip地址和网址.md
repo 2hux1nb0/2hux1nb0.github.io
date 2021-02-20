@@ -80,7 +80,7 @@ tags: [xff referer]
 
 1.防盗链。
 
-刚刚前面有提到一个小[ Demo ](https://www.sojson.com/tag_demo.html)。
+
 
 我在www.sojson.com里有一个`www.baidu.com`链接，那么点击这个`www.baidu.com`，它的header信息里就有：
 

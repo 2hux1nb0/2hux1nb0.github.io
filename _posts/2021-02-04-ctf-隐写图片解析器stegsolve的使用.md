@@ -16,7 +16,7 @@ stegsolve安装配置：配置好Java环境变量（就是需要安装Java，然
 
 
 
-文件打开保存退出，没什么好说的  
+File 里面 文件打开保存退出功能，没什么好说的  
 
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/20210219092646272.png#pic_center)
 
