@@ -7,8 +7,6 @@ tags: [php]
 
 
 
-# [XCTF Web_php_unserialize](https://www.cnblogs.com/darklee/p/12627325.html)
-
 # 一.根据题目猜测和反序列化漏洞有关
 
 　　**1.思路：**
