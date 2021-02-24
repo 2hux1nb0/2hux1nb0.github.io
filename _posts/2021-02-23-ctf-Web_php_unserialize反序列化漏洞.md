@@ -21,7 +21,7 @@ tags: [php]
 
 　　通过代码中的注释我们发现flag在fl4g.php这个文件里面，所以我们要将其序列化
 
-　　![img](https://img2020.cnblogs.com/blog/1993367/202004/1993367-20200403161918022-1739311984.png)
+　　![img](https://img-blog.csdnimg.cn/img_convert/4c2d979433165720387874bdc1560154.png)
 
  
 
@@ -44,13 +44,13 @@ tags: [php]
 
 　　如下图，通过strlen求到序列化的长度为48，但实际我数了一下只有46。
 
-　　![img](https://img2020.cnblogs.com/blog/1993367/202004/1993367-20200403163506490-1205737404.png)
+　　![img](https://img-blog.csdnimg.cn/img_convert/581ebf1ba84cb4f66df8eaa80838e5ea.png)
 
  
 
  
 
-　　![img](https://img2020.cnblogs.com/blog/1993367/202004/1993367-20200403163555867-1895166800.png)
+　　![img](https://img-blog.csdnimg.cn/img_convert/ec318421d9626cc2eed22926f1910c5b.png)
 
  
 
@@ -64,4 +64,4 @@ tags: [php]
 
  
 
-　　![img](https://img2020.cnblogs.com/blog/1993367/202004/1993367-20200403162741363-447762050.png)
+　　![img](https://img-blog.csdnimg.cn/img_convert/19a2e728cdb843b413b7ab3aa97360a2.png)
