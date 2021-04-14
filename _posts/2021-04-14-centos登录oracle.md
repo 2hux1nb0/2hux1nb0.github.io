@@ -17,12 +17,12 @@ conn / as sysdba
 
 查询表空间：
 
-sqlplus / as sysdba连接到oracle
-startup 启动数据库
-查看表空间
-select *from DBA_TABLESPACES
-or
-selelct *from USER_TABLESPACES  
+sqlplus / as sysdba连接到oracle   
+startup 启动数据库  
+查看表空间  
+select *from DBA_TABLESPACES  
+or  
+selelct *from USER_TABLESPACES    
 
 ---
 
