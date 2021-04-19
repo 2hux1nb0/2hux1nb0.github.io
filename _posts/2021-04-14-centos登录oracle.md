@@ -50,8 +50,10 @@ sqlplus
 
 查看是否开启了容器：select name ,cdb from v$containers  
 
-查询容器数据库所有数据文件：select con_id,file_name from cdb_data_files order by 1;  
+查询容器数据库所有数据文件：select con_id,file_name from cdb_data_files order by 1;    
 
 
+
+详细教程：<https://www.w3cschool.cn/oraclejc/>
 
 （未完待续）  
