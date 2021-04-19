@@ -59,7 +59,7 @@ IaaS、PaaS、SaaS三种云服务的区别：
 
 
 
-![img](https:////upload-images.jianshu.io/upload_images/442158-40a7ebd26a6dbe21.jpg?imageMogr2/auto-orient/strip|imageView2/2/w/500/format/webp)
+![img](https:////upload-images.jianshu.io/upload_images/442158-40a7ebd26a6dbe21.jpg?imageMogr2/auto-orient/strip/imageView2/2/w/500/format/webp)
 
 接下来我们再分别用实例给大家介绍下Iass、Sass、Pass。  
 
