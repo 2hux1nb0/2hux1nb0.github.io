@@ -54,6 +54,8 @@ sqlplus
 
 
 
-详细教程：<https://www.w3cschool.cn/oraclejc/>
+详细教程：<https://www.w3cschool.cn/oraclejc/>  
+
+Oracle的SQL语法并无多大不同和难度，与常规sql语法差不多，只是一个熟练度的问题。
 
 （未完待续）  
