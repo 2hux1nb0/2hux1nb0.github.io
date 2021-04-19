@@ -43,7 +43,44 @@ ERP系统是指建立在信息技术基础上，集信息技术与先进管理�
 
 ###  CRM（Customer Relationship Management，客户关系管理）
 
-客户关系管理是指[企业](https://baike.baidu.com/item/企业/707680)为提高核心竞争力，利用相应的信息技术以及[互联网技术](https://baike.baidu.com/item/互联网技术/617749)协调企业与顾客间在[销售](https://baike.baidu.com/item/销售/239410)、[营销](https://baike.baidu.com/item/营销/150434)和服务上的交互，从而提升其[管理方式](https://baike.baidu.com/item/管理方式/260899)，向客户提供创新式的个性化的客户交互和服务的过程。其最终目标是吸引新客户、保留老客户以及将已有客户转为忠实[客户](https://baike.baidu.com/item/客户/1598984)，增加市场。类似于WanDa电影院的鼎鑫系统，能够从销售数据中提炼出挖掘维护客户关系的数据。
+客户关系管理是指[企业](https://baike.baidu.com/item/企业/707680)为提高核心竞争力，利用相应的信息技术以及[互联网技术](https://baike.baidu.com/item/互联网技术/617749)协调企业与顾客间在[销售](https://baike.baidu.com/item/销售/239410)、[营销](https://baike.baidu.com/item/营销/150434)和服务上的交互，从而提升其[管理方式](https://baike.baidu.com/item/管理方式/260899)，向客户提供创新式的个性化的客户交互和服务的过程。其最终目标是吸引新客户、保留老客户以及将已有客户转为忠实[客户](https://baike.baidu.com/item/客户/1598984)，增加市场。类似于WanDa电影院的鼎鑫系统，能够从销售数据中提炼出挖掘维护客户关系的数据。   
+
+
+
+
+
+####  以下内容摘自简书
+
+IaaS、PaaS、SaaS三种云服务的区别：  
+
+
+
+其实搞懂这个问题也不难，我们可以把云计算理解成一栋大楼，而这栋楼又可以分为顶楼、中间、低层三大块。那么我们就可以把Iass(基础设施)、Pass(平台)、Sass(软件)理解成这栋楼的三部分。基础设施在最下端，平台在中间，软件在顶端。别的一些“软”的层可以在这些层上面添加。
+
+
+
+![img](https:////upload-images.jianshu.io/upload_images/442158-40a7ebd26a6dbe21.jpg?imageMogr2/auto-orient/strip|imageView2/2/w/500/format/webp)
+
+接下来我们再分别用实例给大家介绍下Iass、Sass、Pass。  
+
+
+
+ IaaS：Infrastructure-as-a-Service(基础设施即服务)
+ **第一层叫做IaaS**
+ 举例：几年前如果你想在办公室或者公司的网站上运行一些企业应用，你需要去买服务器，或者别的高昂的硬件来控制本地应用，才能让你的业务正常运行。
+ 但现在可以租用IaaS公司提供的场外服务器，存储和网络硬件。这样一来，便大大的节省了维护成本和办公场地。  
+
+
+
+ PaaS：Platform-as-a-Service(平台即服务)
+ **第二层就是所谓的PaaS**
+ 举例： PaaS公司在网上提供各种开发和分发应用的解决方案，比如虚拟服务器和操作系统。这节省了你在硬件上的费用，也让分散的工作室之间的合作变得更加容易。网页应用管理，应用设计，应用虚拟主机，存储，安全以及应用开发协作工具等。  
+
+
+
+ SaaS：Software-as-a-Service(软件即服务)
+ **第三层也就是所谓SaaS**
+ 举例：生活中，几乎我们每一天都在接触SaaS云服务，比如：我们平时使用的苹果手机云服务，网页中的一些云服务等。
 
 
 
