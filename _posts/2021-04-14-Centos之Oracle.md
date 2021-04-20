@@ -54,43 +54,43 @@ sqlplus
 
 ####  对全局数据库的一些操作：
 
-1. *#Step1.* *查看SGA的大小：因为DB_CACHE_SIZE的size受SGA的影响*
-2. SQL> show parameter sga_max_size;
-3. NAME                     TYPE    VALUE
+1. `*#Step1.* *查看SGA的大小：因为DB_CACHE_SIZE的size受SGA的影响*`
+2. `SQL> show parameter sga_max_size;`
+3. `NAME                     TYPE    VALUE`
 4. ------------------------------------ ----------- ------------------------------
-5. sga_max_size                 big integer 2G
+5. `sga_max_size                 big integer 2G`
 6. 
-7. *#Step2.* *查看show parameter shared_pool_size的大小*
-8. SQL> show parameter shared_pool_size;                   NAME                     TYPE    VALUE
+7. `*#Step2.* *查看show parameter shared_pool_size的大小*`
+8. `SQL> show parameter shared_pool_size;                   NAME                     TYPE    VALUE`
 9. ------------------------------------ ----------- ------------------------------
-10. shared_pool_size             big integer 0
+10. `shared_pool_size             big integer 0`
 11. 
-12. *#Step3.* *计算DB_CACHE_SIZE的大小：shared_pool_size* *+* *db_cache_size* *=* *SGA_MAX_SIZE* *** *70**%*
+12. `*#Step3.* *计算DB_CACHE_SIZE的大小：shared_pool_size* *+* *db_cache_size* *=* *SGA_MAX_SIZE* *** *70**%*`
 13. 
-14. *#Step4.* *修改DB_CACHE_SIZE的大小*
-15. SQL> alter system set db_cache_size=1433M scope=spfile sid='demo';
+14. `*#Step4.* *修改DB_CACHE_SIZE的大小*`
+15. `SQL> alter system set db_cache_size=1433M scope=spfile sid='demo';`
 16.  
-17. System altered.
+17. `System altered.`
 18.  
-19. SQL> conn sys /as sysdba
-20. Enter password: ********
-21. Connected.
-22. SQL> shutdown immediate
-23. Database closed.
-24. Database dismounted.
-25. ORACLE instance shut down.
-26. SQL> startup
-27. ORACLE instance started.
+19. `SQL> conn sys /as sysdba`
+20. `Enter password: ********`
+21. `Connected.`
+22. `SQL> shutdown immediate`
+23. `Database closed.`
+24. `Database dismounted.`
+25. `ORACLE instance shut down.`
+26. `SQL> startup`
+27. `ORACLE instance started.`
 28.  
-29. Total System Global Area 2147483648 bytes
-30. Fixed Size          2022144 bytes
-31. Variable Size         503317760 bytes
-32. Database Buffers     1627389952 bytes
-33. Redo Buffers           14753792 bytes
-34. Database mounted.
-35. Database opened.
+29. `Total System Global Area 2147483648 bytes`
+30. `Fixed Size          2022144 bytes`
+31. `Variable Size         503317760 bytes`
+32. `Database Buffers     1627389952 bytes`
+33. `Redo Buffers           14753792 bytes`
+34. `Database mounted.`
+35. `Database opened.`
 36.  
-37. SQL> show parameter db_cache_size
+37. `SQL> show parameter db_cache_size`
 
 
 
