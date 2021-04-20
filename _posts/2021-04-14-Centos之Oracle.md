@@ -1,7 +1,7 @@
 ---
 
 layout: post
-title:  "CentOS7登录Oracle"
+title:  "CentOS7 之 Oracle"
 categories: [实施工程]
 tags: [CentOS7]
 
@@ -94,7 +94,9 @@ sqlplus
 
 
 
-详细教程：<https://www.w3cschool.cn/oraclejc/>  
+Oracle语法详细教程：<https://www.w3cschool.cn/oraclejc/>    
+
+Oracle架构教程：<https://blog.csdn.net/tiyorn/article/details/77875636?utm_medium=distribute.pc_relevant.none-task-blog-baidujs_baidulandingword-5&spm=1001.2101.3001.4242>
 
 Oracle的SQL语法并无多大不同和难度，与常规sql语法差不多，只是一个熟练度的问题。
 
