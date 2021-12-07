@@ -1,3 +1,12 @@
+---
+
+layout: post
+title:  "Linux的find之exec用法"
+categories: [Linux]
+tags: [Linux]
+
+---
+
 find 是我们很常用的一个Linux命令，但是我们一般查找出来的额并不仅仅是看看而已，还会有进一步的操作，这个时候exec的作用就显现出来了。
 
 　　exec解释：
