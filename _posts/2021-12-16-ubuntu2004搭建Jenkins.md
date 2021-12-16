@@ -41,5 +41,4 @@ tags: [ubuntu]
 
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/ce2dc2eec6fd47b2a943716530b6a119.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBA6buR5pyx6ZuA,size_20,color_FFFFFF,t_70,g_se,x_16#pic_center)
 
-
 至此，Jenkins搭建完成。
